@@ -7,7 +7,7 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
         // Crear País
-        Pais argentina = new Pais("Argentina");
+        Pais argentina = new Pais("Argentina",new HashSet<>()); //al borrar el constructor de pais tuve que meter ese new hashset o tambien puedo agregar el constructor y pasar directamente el pais
         //Provincias
         Provincia bsas = new Provincia("Buenos Aires",argentina);
         Provincia cordoba = new Provincia("Córdoba", argentina);

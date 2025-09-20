@@ -10,10 +10,10 @@ import java.util.Set;
 public class Pais {
     private String nombre;
     private Set<Provincia> provincias = new HashSet<>();
-    public Pais(String nombre) {
-        this.nombre = nombre;
-    }
 
+public Pais(String nombre){
+    this.nombre=nombre;
+}
     public void agregarProvincia(Provincia provincia) {
         provincias.add(provincia);
     }
